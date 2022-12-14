@@ -15,7 +15,7 @@ struct AppRoute {
 }
 
 extension AppRoute {
-    // TODO: Implement this to inbound deeplinks and generate a route
+    // TODO: Implement this to receive inbound deeplinks and generate a route
     init?(url: URL) {
 
         return nil

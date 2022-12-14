@@ -14,10 +14,4 @@ class ThreeViewModel: ObservableObject {
         Thing(description: "BBB"),
         Thing(description: "CCC")
     ]
-//    @Published var navPath = NavigationPath()
-//    @Published var appRouter: AppRouter
-
-//    init(appRouter: AppRouter) {
-//        self.appRouter = appRouter
-//    }
 }

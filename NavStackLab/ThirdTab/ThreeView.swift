@@ -10,7 +10,7 @@ import SwiftUI
 struct ThreeView: View {
     @StateObject var viewModel = ThreeViewModel()
     @EnvironmentObject var appRouter: AppRouter
-
+    
     var body: some View {
         VStack {
             NavigationStack(path: $appRouter.navPathThree) {
@@ -22,7 +22,7 @@ struct ThreeView: View {
                 .listStyle(.plain)
                 .navigationDestination(for: Thing.self) { thing in
                     ThingView(viewModel: ThingViewModel(thing: thing))
-                    }
+                }
                 .navigationTitle("View 3")
             }
         }
