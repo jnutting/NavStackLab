@@ -9,9 +9,12 @@ import SwiftUI
 
 @main
 struct NavStackLabApp: App {
+    let appRouter = AppRouter()
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            RootTabView()
+                .environmentObject(appRouter)
         }
     }
 }

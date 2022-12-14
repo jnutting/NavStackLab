@@ -8,12 +8,23 @@
 
 /* Begin PBXBuildFile section */
 		04DC288A2947730C00BF90BB /* NavStackLabApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DC28892947730C00BF90BB /* NavStackLabApp.swift */; };
-		04DC288C2947730C00BF90BB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DC288B2947730C00BF90BB /* ContentView.swift */; };
 		04DC288E2947730D00BF90BB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04DC288D2947730D00BF90BB /* Assets.xcassets */; };
 		04DC28912947730D00BF90BB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04DC28902947730D00BF90BB /* Preview Assets.xcassets */; };
 		04DC289B2947730D00BF90BB /* NavStackLabTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DC289A2947730D00BF90BB /* NavStackLabTests.swift */; };
 		04DC28A52947730D00BF90BB /* NavStackLabUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DC28A42947730D00BF90BB /* NavStackLabUITests.swift */; };
 		04DC28A72947730D00BF90BB /* NavStackLabUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DC28A62947730D00BF90BB /* NavStackLabUITestsLaunchTests.swift */; };
+		04DC28B42947738800BF90BB /* RootTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DC28B32947738800BF90BB /* RootTabView.swift */; };
+		04DC28B6294776C700BF90BB /* OneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DC28B5294776C700BF90BB /* OneView.swift */; };
+		04DC28B82947771000BF90BB /* TwoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DC28B72947771000BF90BB /* TwoView.swift */; };
+		04DC28BA2947771C00BF90BB /* ThreeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DC28B92947771C00BF90BB /* ThreeView.swift */; };
+		04DC28BE2947817100BF90BB /* ThreeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DC28BD2947817100BF90BB /* ThreeViewModel.swift */; };
+		04DC28C02947831000BF90BB /* Thing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DC28BF2947831000BF90BB /* Thing.swift */; };
+		04DC28C2294786FE00BF90BB /* ThingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DC28C1294786FE00BF90BB /* ThingView.swift */; };
+		04DC28C42947871600BF90BB /* ThingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DC28C32947871600BF90BB /* ThingViewModel.swift */; };
+		04DC28C629478ACE00BF90BB /* AppRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DC28C529478ACE00BF90BB /* AppRouter.swift */; };
+		04DC28CA2948981200BF90BB /* RootTabState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DC28C92948981200BF90BB /* RootTabState.swift */; };
+		04DC28CE2948C75000BF90BB /* AppRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DC28CD2948C75000BF90BB /* AppRoute.swift */; };
+		04DC28D72949C5A800BF90BB /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 04DC28D62949C5A700BF90BB /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +47,6 @@
 /* Begin PBXFileReference section */
 		04DC28862947730C00BF90BB /* NavStackLab.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NavStackLab.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04DC28892947730C00BF90BB /* NavStackLabApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavStackLabApp.swift; sourceTree = "<group>"; };
-		04DC288B2947730C00BF90BB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		04DC288D2947730D00BF90BB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		04DC28902947730D00BF90BB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		04DC28962947730D00BF90BB /* NavStackLabTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NavStackLabTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,6 +54,18 @@
 		04DC28A02947730D00BF90BB /* NavStackLabUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NavStackLabUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		04DC28A42947730D00BF90BB /* NavStackLabUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavStackLabUITests.swift; sourceTree = "<group>"; };
 		04DC28A62947730D00BF90BB /* NavStackLabUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavStackLabUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		04DC28B32947738800BF90BB /* RootTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootTabView.swift; sourceTree = "<group>"; };
+		04DC28B5294776C700BF90BB /* OneView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneView.swift; sourceTree = "<group>"; };
+		04DC28B72947771000BF90BB /* TwoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwoView.swift; sourceTree = "<group>"; };
+		04DC28B92947771C00BF90BB /* ThreeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreeView.swift; sourceTree = "<group>"; };
+		04DC28BD2947817100BF90BB /* ThreeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreeViewModel.swift; sourceTree = "<group>"; };
+		04DC28BF2947831000BF90BB /* Thing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Thing.swift; sourceTree = "<group>"; };
+		04DC28C1294786FE00BF90BB /* ThingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThingView.swift; sourceTree = "<group>"; };
+		04DC28C32947871600BF90BB /* ThingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThingViewModel.swift; sourceTree = "<group>"; };
+		04DC28C529478ACE00BF90BB /* AppRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRouter.swift; sourceTree = "<group>"; };
+		04DC28C92948981200BF90BB /* RootTabState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootTabState.swift; sourceTree = "<group>"; };
+		04DC28CD2948C75000BF90BB /* AppRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRoute.swift; sourceTree = "<group>"; };
+		04DC28D62949C5A700BF90BB /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +96,7 @@
 		04DC287D2947730C00BF90BB = {
 			isa = PBXGroup;
 			children = (
+				04DC28D62949C5A700BF90BB /* README.md */,
 				04DC28882947730C00BF90BB /* NavStackLab */,
 				04DC28992947730D00BF90BB /* NavStackLabTests */,
 				04DC28A32947730D00BF90BB /* NavStackLabUITests */,
@@ -95,7 +118,13 @@
 			isa = PBXGroup;
 			children = (
 				04DC28892947730C00BF90BB /* NavStackLabApp.swift */,
-				04DC288B2947730C00BF90BB /* ContentView.swift */,
+				04DC28CF2948CED100BF90BB /* Root */,
+				04DC28D02948CEEF00BF90BB /* FirstTab */,
+				04DC28D12948CF0100BF90BB /* SecondTab */,
+				04DC28D22948CF0F00BF90BB /* ThirdTab */,
+				04DC28D32948CF1F00BF90BB /* Model */,
+				04DC28D42948CF2A00BF90BB /* ThingDetail */,
+				04DC28D52948CF4E00BF90BB /* Routing */,
 				04DC288D2947730D00BF90BB /* Assets.xcassets */,
 				04DC288F2947730D00BF90BB /* Preview Content */,
 			);
@@ -125,6 +154,66 @@
 				04DC28A62947730D00BF90BB /* NavStackLabUITestsLaunchTests.swift */,
 			);
 			path = NavStackLabUITests;
+			sourceTree = "<group>";
+		};
+		04DC28CF2948CED100BF90BB /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				04DC28C92948981200BF90BB /* RootTabState.swift */,
+				04DC28B32947738800BF90BB /* RootTabView.swift */,
+			);
+			path = Root;
+			sourceTree = "<group>";
+		};
+		04DC28D02948CEEF00BF90BB /* FirstTab */ = {
+			isa = PBXGroup;
+			children = (
+				04DC28B5294776C700BF90BB /* OneView.swift */,
+			);
+			path = FirstTab;
+			sourceTree = "<group>";
+		};
+		04DC28D12948CF0100BF90BB /* SecondTab */ = {
+			isa = PBXGroup;
+			children = (
+				04DC28B72947771000BF90BB /* TwoView.swift */,
+			);
+			path = SecondTab;
+			sourceTree = "<group>";
+		};
+		04DC28D22948CF0F00BF90BB /* ThirdTab */ = {
+			isa = PBXGroup;
+			children = (
+				04DC28B92947771C00BF90BB /* ThreeView.swift */,
+				04DC28BD2947817100BF90BB /* ThreeViewModel.swift */,
+			);
+			path = ThirdTab;
+			sourceTree = "<group>";
+		};
+		04DC28D32948CF1F00BF90BB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				04DC28BF2947831000BF90BB /* Thing.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		04DC28D42948CF2A00BF90BB /* ThingDetail */ = {
+			isa = PBXGroup;
+			children = (
+				04DC28C1294786FE00BF90BB /* ThingView.swift */,
+				04DC28C32947871600BF90BB /* ThingViewModel.swift */,
+			);
+			path = ThingDetail;
+			sourceTree = "<group>";
+		};
+		04DC28D52948CF4E00BF90BB /* Routing */ = {
+			isa = PBXGroup;
+			children = (
+				04DC28CD2948C75000BF90BB /* AppRoute.swift */,
+				04DC28C529478ACE00BF90BB /* AppRouter.swift */,
+			);
+			path = Routing;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,6 +320,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04DC28D72949C5A800BF90BB /* README.md in Resources */,
 				04DC28912947730D00BF90BB /* Preview Assets.xcassets in Resources */,
 				04DC288E2947730D00BF90BB /* Assets.xcassets in Resources */,
 			);
@@ -257,8 +347,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				04DC288C2947730C00BF90BB /* ContentView.swift in Sources */,
+				04DC28B6294776C700BF90BB /* OneView.swift in Sources */,
+				04DC28B42947738800BF90BB /* RootTabView.swift in Sources */,
+				04DC28C2294786FE00BF90BB /* ThingView.swift in Sources */,
+				04DC28BE2947817100BF90BB /* ThreeViewModel.swift in Sources */,
+				04DC28CE2948C75000BF90BB /* AppRoute.swift in Sources */,
+				04DC28C629478ACE00BF90BB /* AppRouter.swift in Sources */,
+				04DC28C02947831000BF90BB /* Thing.swift in Sources */,
+				04DC28C42947871600BF90BB /* ThingViewModel.swift in Sources */,
+				04DC28BA2947771C00BF90BB /* ThreeView.swift in Sources */,
 				04DC288A2947730C00BF90BB /* NavStackLabApp.swift in Sources */,
+				04DC28B82947771000BF90BB /* TwoView.swift in Sources */,
+				04DC28CA2948981200BF90BB /* RootTabState.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
