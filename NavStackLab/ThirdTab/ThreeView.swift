@@ -16,7 +16,7 @@ struct ThreeView: View {
             NavigationStack(path: $appRouter.navPathThree) {
                 List(viewModel.elements) { thing in
                     Button(thing.description) {
-                        appRouter.show(thing, for: .three)
+                        appRouter.show(thing)
                     }
                 }
                 .listStyle(.plain)

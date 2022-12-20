@@ -16,8 +16,8 @@ class AppRouter: ObservableObject {
 
     @Published var selectedRootTab: RootTabState = .initial
 
-    func show(_ thing: Thing, for tabState: RootTabState) {
-        switch tabState {
+    func show(_ thing: Thing) {
+        switch selectedRootTab {
         case .one:
             navPathOne.append(thing)
         case .two:
