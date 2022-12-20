@@ -16,12 +16,12 @@ struct ThreeView: View {
             NavigationStack(path: $appRouter.navPathThree) {
                 List(viewModel.elements) { thing in
                     Button(thing.description) {
-                        appRouter.show(thing)
+                        appRouter.display(thing)
                     }
                 }
                 .listStyle(.plain)
                 .navigationDestination(for: Thing.self) { thing in
-                    ThingView(viewModel: ThingViewModel(thing: thing))
+                    AnyView(thing.view)
                 }
                 .navigationTitle("View 3")
             }

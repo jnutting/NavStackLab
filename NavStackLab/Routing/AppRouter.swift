@@ -16,14 +16,14 @@ class AppRouter: ObservableObject {
 
     @Published var selectedRootTab: RootTabState = .initial
 
-    func show(_ thing: Thing) {
+    func display(_ viewable: any Viewable) {
         switch selectedRootTab {
         case .one:
-            navPathOne.append(thing)
+            navPathOne.append(viewable)
         case .two:
-            navPathTwo.append(thing)
+            navPathTwo.append(viewable)
         case .three:
-            navPathThree.append(thing)
+            navPathThree.append(viewable)
         }
     }
 

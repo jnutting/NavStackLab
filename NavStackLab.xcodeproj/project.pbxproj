@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0422D61A2951EEE3005091D1 /* Viewable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0422D6192951EEE3005091D1 /* Viewable.swift */; };
+		0422D61D2952001F005091D1 /* Thing+Viewable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0422D61C2952001F005091D1 /* Thing+Viewable.swift */; };
 		04DC288A2947730C00BF90BB /* NavStackLabApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DC28892947730C00BF90BB /* NavStackLabApp.swift */; };
 		04DC288E2947730D00BF90BB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04DC288D2947730D00BF90BB /* Assets.xcassets */; };
 		04DC28912947730D00BF90BB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04DC28902947730D00BF90BB /* Preview Assets.xcassets */; };
@@ -45,6 +47,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0422D6192951EEE3005091D1 /* Viewable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Viewable.swift; sourceTree = "<group>"; };
+		0422D61C2952001F005091D1 /* Thing+Viewable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Thing+Viewable.swift"; sourceTree = "<group>"; };
 		04DC28862947730C00BF90BB /* NavStackLab.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NavStackLab.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04DC28892947730C00BF90BB /* NavStackLabApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavStackLabApp.swift; sourceTree = "<group>"; };
 		04DC288D2947730D00BF90BB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -93,6 +97,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0422D61B29520009005091D1 /* Viewability */ = {
+			isa = PBXGroup;
+			children = (
+				0422D6192951EEE3005091D1 /* Viewable.swift */,
+				0422D61C2952001F005091D1 /* Thing+Viewable.swift */,
+			);
+			path = Viewability;
+			sourceTree = "<group>";
+		};
 		04DC287D2947730C00BF90BB = {
 			isa = PBXGroup;
 			children = (
@@ -125,6 +138,7 @@
 				04DC28D32948CF1F00BF90BB /* Model */,
 				04DC28D42948CF2A00BF90BB /* ThingDetail */,
 				04DC28D52948CF4E00BF90BB /* Routing */,
+				0422D61B29520009005091D1 /* Viewability */,
 				04DC288D2947730D00BF90BB /* Assets.xcassets */,
 				04DC288F2947730D00BF90BB /* Preview Content */,
 			);
@@ -351,8 +365,10 @@
 				04DC28B42947738800BF90BB /* RootTabView.swift in Sources */,
 				04DC28C2294786FE00BF90BB /* ThingView.swift in Sources */,
 				04DC28BE2947817100BF90BB /* ThreeViewModel.swift in Sources */,
+				0422D61A2951EEE3005091D1 /* Viewable.swift in Sources */,
 				04DC28CE2948C75000BF90BB /* AppRoute.swift in Sources */,
 				04DC28C629478ACE00BF90BB /* AppRouter.swift in Sources */,
+				0422D61D2952001F005091D1 /* Thing+Viewable.swift in Sources */,
 				04DC28C02947831000BF90BB /* Thing.swift in Sources */,
 				04DC28C42947871600BF90BB /* ThingViewModel.swift in Sources */,
 				04DC28BA2947771C00BF90BB /* ThreeView.swift in Sources */,
