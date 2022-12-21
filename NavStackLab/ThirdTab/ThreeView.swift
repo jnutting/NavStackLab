@@ -14,20 +14,26 @@ struct ThreeView: View {
     var body: some View {
         VStack {
             NavigationStack(path: $appRouter.navPathThree) {
-                List(viewModel.elements) { thing in
+                List(viewModel.things) { thing in
                     Button(thing.description) {
                         appRouter.display(thing)
                     }
                 }
                 .listStyle(.plain)
-                .navigationDestination(for: Thing.self) { thing in
-                    AnyView(thing.view)
+                List(viewModel.others) { other in
+                    Button(other.description) {
+                        appRouter.display(other)
+                    }
                 }
+                .listStyle(.plain)
+                .applyAppNavigationDestinations()
                 .navigationTitle("View 3")
             }
         }
     }
 }
+
+
 
 struct ThreeView_Previews: PreviewProvider {
     static var previews: some View {

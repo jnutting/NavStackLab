@@ -14,6 +14,7 @@ struct TwoView: View {
         NavigationStack(path: $appRouter.navPathTwo) {
             Color.green
                 .frame(maxWidth: .infinity, maxHeight: .infinity)
+                .applyAppNavigationDestinations()
                 .navigationTitle("View 2")
         }
     }

@@ -14,6 +14,7 @@ struct OneView: View {
         NavigationStack(path: $appRouter.navPathOne) {
             Color.red
                 .frame(maxWidth: .infinity, maxHeight: .infinity)
+                .applyAppNavigationDestinations()
                 .navigationTitle("View 1")
         }
     }

@@ -58,9 +58,11 @@ struct RootTabView: View {
 //                                        Thing(description: "Hello Again")
 //                                    ]))
 
-            // We can't currently navigate to things through a path if the tab's NavigationStack doesn't
-            // know what view to use for an object. This one doesn't work, for example, because tab one's
-            // NavigationStack doesn't know what to do with a Thing instance:
+            // We can navigate to anything through a path as long as the tab's NavigationStack knows
+            // what view to use for an object. This one works, for example, even though tab one's
+            // NavigationStack doesn't display any kind of list, because all of our three tab content
+            // views know what to do with a Thing instance thanks to some shared configuration (see
+            // ViewHelpers.swift)
 //            appRoute = AppRoute(rootTab: .one, navigationPath: NavigationPath([Thing(description: "AAA")]))
 
             if let appRoute { appRouter.forceNavigate(to: appRoute) }

@@ -11,13 +11,8 @@ struct ThingView: View {
     @ObservedObject var viewModel: ThingViewModel
 
     var body: some View {
-        if let thing = viewModel.thing {
-            Text(thing.description)
-                .font(.largeTitle)
-        } else {
-            Text("No Thing")
-                .font(.largeTitle)
-        }
+        Text(viewModel.thing?.description ?? "No thing")
+            .font(.largeTitle)
     }
 
     init(viewModel: ThingViewModel) {

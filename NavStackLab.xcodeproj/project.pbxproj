@@ -9,6 +9,11 @@
 /* Begin PBXBuildFile section */
 		0422D61A2951EEE3005091D1 /* Viewable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0422D6192951EEE3005091D1 /* Viewable.swift */; };
 		0422D61D2952001F005091D1 /* Thing+Viewable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0422D61C2952001F005091D1 /* Thing+Viewable.swift */; };
+		0422D61F2953100D005091D1 /* Other.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0422D61E2953100D005091D1 /* Other.swift */; };
+		0422D6212953102A005091D1 /* Other+Viewable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0422D6202953102A005091D1 /* Other+Viewable.swift */; };
+		0422D62429531050005091D1 /* OtherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0422D62329531050005091D1 /* OtherView.swift */; };
+		0422D62629531058005091D1 /* OtherViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0422D62529531058005091D1 /* OtherViewModel.swift */; };
+		0422D62829532A08005091D1 /* ViewHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0422D62729532A08005091D1 /* ViewHelpers.swift */; };
 		04DC288A2947730C00BF90BB /* NavStackLabApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DC28892947730C00BF90BB /* NavStackLabApp.swift */; };
 		04DC288E2947730D00BF90BB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04DC288D2947730D00BF90BB /* Assets.xcassets */; };
 		04DC28912947730D00BF90BB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04DC28902947730D00BF90BB /* Preview Assets.xcassets */; };
@@ -49,6 +54,11 @@
 /* Begin PBXFileReference section */
 		0422D6192951EEE3005091D1 /* Viewable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Viewable.swift; sourceTree = "<group>"; };
 		0422D61C2952001F005091D1 /* Thing+Viewable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Thing+Viewable.swift"; sourceTree = "<group>"; };
+		0422D61E2953100D005091D1 /* Other.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Other.swift; sourceTree = "<group>"; };
+		0422D6202953102A005091D1 /* Other+Viewable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Other+Viewable.swift"; sourceTree = "<group>"; };
+		0422D62329531050005091D1 /* OtherView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtherView.swift; sourceTree = "<group>"; };
+		0422D62529531058005091D1 /* OtherViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtherViewModel.swift; sourceTree = "<group>"; };
+		0422D62729532A08005091D1 /* ViewHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewHelpers.swift; sourceTree = "<group>"; };
 		04DC28862947730C00BF90BB /* NavStackLab.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NavStackLab.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04DC28892947730C00BF90BB /* NavStackLabApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavStackLabApp.swift; sourceTree = "<group>"; };
 		04DC288D2947730D00BF90BB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -101,9 +111,17 @@
 			isa = PBXGroup;
 			children = (
 				0422D6192951EEE3005091D1 /* Viewable.swift */,
-				0422D61C2952001F005091D1 /* Thing+Viewable.swift */,
 			);
 			path = Viewability;
+			sourceTree = "<group>";
+		};
+		0422D6222953103E005091D1 /* OtherDetail */ = {
+			isa = PBXGroup;
+			children = (
+				0422D62329531050005091D1 /* OtherView.swift */,
+				0422D62529531058005091D1 /* OtherViewModel.swift */,
+			);
+			path = OtherDetail;
 			sourceTree = "<group>";
 		};
 		04DC287D2947730C00BF90BB = {
@@ -131,12 +149,14 @@
 			isa = PBXGroup;
 			children = (
 				04DC28892947730C00BF90BB /* NavStackLabApp.swift */,
+				0422D62729532A08005091D1 /* ViewHelpers.swift */,
 				04DC28CF2948CED100BF90BB /* Root */,
 				04DC28D02948CEEF00BF90BB /* FirstTab */,
 				04DC28D12948CF0100BF90BB /* SecondTab */,
 				04DC28D22948CF0F00BF90BB /* ThirdTab */,
 				04DC28D32948CF1F00BF90BB /* Model */,
 				04DC28D42948CF2A00BF90BB /* ThingDetail */,
+				0422D6222953103E005091D1 /* OtherDetail */,
 				04DC28D52948CF4E00BF90BB /* Routing */,
 				0422D61B29520009005091D1 /* Viewability */,
 				04DC288D2947730D00BF90BB /* Assets.xcassets */,
@@ -208,6 +228,9 @@
 			isa = PBXGroup;
 			children = (
 				04DC28BF2947831000BF90BB /* Thing.swift */,
+				0422D61C2952001F005091D1 /* Thing+Viewable.swift */,
+				0422D61E2953100D005091D1 /* Other.swift */,
+				0422D6202953102A005091D1 /* Other+Viewable.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -364,15 +387,20 @@
 				04DC28B6294776C700BF90BB /* OneView.swift in Sources */,
 				04DC28B42947738800BF90BB /* RootTabView.swift in Sources */,
 				04DC28C2294786FE00BF90BB /* ThingView.swift in Sources */,
+				0422D61F2953100D005091D1 /* Other.swift in Sources */,
 				04DC28BE2947817100BF90BB /* ThreeViewModel.swift in Sources */,
 				0422D61A2951EEE3005091D1 /* Viewable.swift in Sources */,
 				04DC28CE2948C75000BF90BB /* AppRoute.swift in Sources */,
+				0422D62629531058005091D1 /* OtherViewModel.swift in Sources */,
 				04DC28C629478ACE00BF90BB /* AppRouter.swift in Sources */,
 				0422D61D2952001F005091D1 /* Thing+Viewable.swift in Sources */,
 				04DC28C02947831000BF90BB /* Thing.swift in Sources */,
+				0422D62829532A08005091D1 /* ViewHelpers.swift in Sources */,
 				04DC28C42947871600BF90BB /* ThingViewModel.swift in Sources */,
+				0422D6212953102A005091D1 /* Other+Viewable.swift in Sources */,
 				04DC28BA2947771C00BF90BB /* ThreeView.swift in Sources */,
 				04DC288A2947730C00BF90BB /* NavStackLabApp.swift in Sources */,
+				0422D62429531050005091D1 /* OtherView.swift in Sources */,
 				04DC28B82947771000BF90BB /* TwoView.swift in Sources */,
 				04DC28CA2948981200BF90BB /* RootTabState.swift in Sources */,
 			);
